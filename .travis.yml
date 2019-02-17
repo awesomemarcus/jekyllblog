@@ -6,7 +6,7 @@ before_install:
   - docker build -t jekyllblog .
 
 script:
-  - docker run --volumes="$PWD:/srv/jekyll" jekyllblog rake test
+  - docker run jekyllblog rake test
 
 deploy:
   provider: pages
