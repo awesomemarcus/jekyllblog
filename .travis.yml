@@ -4,7 +4,7 @@ rvm:
 
 install: gem install jekyll html-proofer
 script:
-  - bundle update && jekyll build && htmlproofer ./_site --disable-external --allow_missing_href --internal-domains https://awesomemarcus.github.io
+  - bundle update && jekyll build && htmlproofer ./_site --disable-external --allow_missing_href --external_only
 
 # branch whitelist, only for GitHub Pages
 branches:
